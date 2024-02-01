@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-        key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
-      
       - name: Load & cache dependencies
         uses: ./.github/actions/cached-deps      
 
