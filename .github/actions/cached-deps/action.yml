@@ -25,5 +25,4 @@ runs:
       run: |
         npm ci
         echo "cache='${{ inputs.caching }}'" >> $GITHUB_OUTPUT
-      shell: bash
-~                    
+      shell: bash                    
