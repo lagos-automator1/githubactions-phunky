@@ -31,7 +31,7 @@ jobs:
           path: ~/.npm
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
-        run: npm cix
+        run: npm ci
       - name: Test code
         #id: run-tests
         run: npm run test
